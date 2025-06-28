@@ -17,7 +17,7 @@ export default function App() {
         whileHover={{ rotateX:20,rotateY:15, boxShadow: "0px 20px 50px rgba(8,112,104,0.7)"}} 
         style={{translateZ:30}} transition={{duration:0.3,ease:"easeInOut"}}
         >
-          Maa Chuda 
+          Hello World
           <span className='absolute inset-x-0 bottom-px w-3/4 bg-gradient-to-r from-transparent via-cyan-400 to-transparent h-px mx-auto'/>
           <span className='absolute inset-x-0 duration-300 h-[4px] opacity-0 group-hover:opacity-100 transition-opacity bottom-px w-full bg-gradient-to-r from-transparent via-cyan-400 to-transparent blur-sm mx-auto'/>
       </motion.button>
