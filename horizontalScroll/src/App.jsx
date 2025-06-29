@@ -37,7 +37,7 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white ">
           {card.title}
         </p>
       </div>
@@ -45,18 +45,56 @@ const Card = ({ card }) => {
   );
 };
 
+const cards = [
+  {
+    url: "/braindamage.jpeg",
+    title: "Title 1",
+    id: 1,
+  },
+  {
+    url: "/computerLickMeme.jpeg",
+    title: "Title 2",
+    id: 2,
+  },
+  {
+    url: "/gofuckyourselfmeme.jpeg",
+    title: "Title 3",
+    id: 3,
+  },
+  {
+    url: "/aachalaude.jpeg",
+    title: "Title 4",
+    id: 4,
+  },
+  {
+    url: "/wedontcarememe.jpeg",
+    title: "Title 5",
+    id: 5,
+  },
+  {
+    url: "/luffy.jpeg",
+    title: "Title 6",
+    id: 6,
+  },
+  {
+    url: "/zoroMeme.jpeg",
+    title: "Title 7",
+    id: 7,
+  },
+];
+
 
 export default function App() {
   return (
     <>
       <div className="bg-neutral-800">
-        <div className="flex h-48 items-center justify-center">
+        <div className="flex h-96 items-center justify-center">
           <span className="font-semibold uppercase text-neutral-500">
             Scroll down
           </span>
         </div>
         <HorizontalScrollCarousel />
-        <div className="flex h-48 items-center justify-center">
+        <div className="flex h-96 items-center justify-center">
           <span className="font-semibold uppercase text-neutral-500">
             Scroll up
           </span>
